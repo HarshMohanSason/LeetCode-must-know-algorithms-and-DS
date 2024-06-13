@@ -1,7 +1,9 @@
+/* Must know sorting algorithms. Usually Quicksort and MergeSort are sufficient as in most cases, the input size is really large
+    */
+
 #include <iostream>
 
 using namespace std;
-
 
 //Bubble Sort algorithm. Swapping two elements at a time until the last element is largest in each pass
 //For the given array {5,3,8,4,2}
