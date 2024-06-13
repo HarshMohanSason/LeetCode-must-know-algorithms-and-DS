@@ -60,6 +60,8 @@ void selectionSort(int arr[], int n)
 // Pass 2: {3,5,8,4,2}
 // Pass 3: {3,4,5,8,2}
 // Pass 4: {2,3,4,5,8}
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
 
 void insertionSort(int arr[], int n) {
     
