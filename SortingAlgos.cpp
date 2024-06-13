@@ -53,6 +53,14 @@ void selectionSort(int arr[], int n)
     }
 }
 
+//Insertion sort algorithm. Take the first element of the array, since array with one element is always sorted. Start from the second element and compare it with the previous element. 
+//Keep on comparing the new element with all the previous sorted elements until the array is sorted
+//For the given array {5,3,8,4,2}
+// Pass 1: {3,5,8,4,2}
+// Pass 2: {3,5,8,4,2}
+// Pass 3: {3,4,5,8,2}
+// Pass 4: {2,3,4,5,8}
+
 void insertionSort(int arr[], int n) {
     
     for (int i = 1; i < n; i++) {
