@@ -11,7 +11,7 @@ Use three pointers to partition the array
 Steps: 
 
 -- Start with low = 0, mid = 0, and high = n - 1. Iterate through the array with mid pointer. Based on the value at arr[mid], do the following: 
-	-> 0. Swap [arr] and arr[mid], then incrememnt both low and mid
+	-> 0. Swap arr[low] and arr[mid], then incrememnt both low and mid
 	-> 1. Just move the mid pointer
 	-> 2. Swap arr[mid] and arr[high], then decrement high
 	
