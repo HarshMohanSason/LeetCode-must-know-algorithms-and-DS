@@ -1,6 +1,8 @@
 
 /*        This Algorithm is used to traverse a binary tree in O(1) space. No recursion or stack is being used
 
+          Note this is an inorder traversal. Pre or Post slightly differ in code
+
           Very simple steps: 
 
           * initialize two pointers current and pre
