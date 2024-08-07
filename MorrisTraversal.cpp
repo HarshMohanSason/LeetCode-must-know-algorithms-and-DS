@@ -1,3 +1,24 @@
+
+/*        This Algorithm is used to traverse a binary tree in O(1) space. No recursion or stack is being used
+
+          Very simple steps: 
+
+          * initialize two pointers current and pre
+          * initialize current = root; 
+          1. Check if left subtree exists. If it does not, simply output data of right subtree
+          2. If left subtree does exist: 
+              * make the pre = current->left; 
+              * Traverse to the bottom right node of the left subtree i.e while(pre->right != null && pre->right != current)
+          3. Once pre is pointing to the rightmost node in the left subtreee: 
+              * check if pre->right != NULL i.e if there is no right node, make the pre->right = current (which is the root->left initially)
+              * make current move one node down. 
+              If pre->right != NULL , then make the pre->right = NULL and output the data. and make the current move to the right node (current = current->right)
+         
+                
+        
+*/
+
+
 #include <iostream>
 
 using namespace std;
