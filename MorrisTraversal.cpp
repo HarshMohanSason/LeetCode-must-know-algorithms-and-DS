@@ -4,7 +4,7 @@ using namespace std;
 
 struct tNode {
     int data;
-    tNode* left;  // Corrected: Use tNode* instead of int for left and right pointers
+    tNode* left;  
     tNode* right;
 };
 
@@ -31,7 +31,7 @@ void MorrisTraversal(tNode* root) {
                 current = current->left;
             } else {
                 pre->right = NULL;
-                cout << current->data << " ";  // Corrected: Fixed the output statement
+                cout << current->data << " ";  
                 current = current->right;
             }
         }
@@ -43,7 +43,7 @@ tNode* newNode(int data) {
     node->data = data;
     node->left = NULL;
     node->right = NULL;
-    return node;  // Corrected: Added return statement to newNode function
+    return node;  
 }
 
 int main() {
