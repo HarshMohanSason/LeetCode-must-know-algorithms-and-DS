@@ -17,24 +17,24 @@ using namespace std;
 
 int binarySearchIter(int arr[], int low, int high, int x)
 {
-  int mid = low + (high - low) / 2; 
+    while (low <= high)
+    {
+        int mid = low + (high - low) / 2;  // Calculate mid inside the loop
 
-    while(low <= high)
-      {
-        if(x == arr[mid])
+        if (arr[mid] == x)
         {
-          return mid; 
+            return mid;
         }
-        if(arr[mid] <x)
+        if (arr[mid] < x)
         {
-          low = mid + 1; 
+            low = mid + 1;
         }
         else
         {
-          high = mid - 1;
+            high = mid - 1;
         }
-      }
-return -1; 
+    }
+    return -1;  // Element not found
 }
 
 int binarySearchRecurs(int arr[], int low, int high, int x)
