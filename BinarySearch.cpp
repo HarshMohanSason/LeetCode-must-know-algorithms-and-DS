@@ -39,21 +39,21 @@ int binarySearchIter(int arr[], int low, int high, int x)
 
 int binarySearchRecurs(int arr[], int low, int high, int x)
 {
-  if(high>= low)
-  {
-    int mid = low + (high - low) / 2;
+    if (high >= low)
+    {
+        int mid = low + (high - low) / 2;
 
-    if(arr[mid] == x)
-    {
-      return mid; 
+        if (arr[mid] == x)
+        {
+            return mid; 
+        }
+        if (arr[mid] > x)
+        {
+            return binarySearchRecurs(arr, low, mid - 1, x); // Search in the left half
+        }
+        return binarySearchRecurs(arr, mid + 1, high, x); // Search in the right half
     }
-    if(arr[mid]>x)
-    {
-      return binarySearchRecurs(arr, low, mid+1, x);
-    }
-    return binarySearchRecurs(arr, low, mid-1, x);
-  }
-return -1;
+    return -1; // Element not found
 }
 
 int main() {
